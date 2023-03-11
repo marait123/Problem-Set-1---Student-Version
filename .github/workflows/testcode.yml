@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  grading:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -17,5 +17,5 @@ jobs:
     
       - name: Autograder
         run: python ./autograder.py
-        shell: sh
+        # shell: sh
 
